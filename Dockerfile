@@ -1,14 +1,9 @@
 FROM alpine:3.12
 
-ARG VCS_REF
-ARG BUILD_DATE
-
 # Metadata
-LABEL org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.name="helm-kubectl-jq" \
-    org.label-schema.url="https://ghcr.io/redstonewizard08/helm-kubectl-jq/" \
-    org.label-schema.vcs-url="https://github.com/redstonewizard08/docker-helm-kubectl-jq" \
-    org.label-schema.build-date=$BUILD_DATE
+LABEL org.label-schema.name="docker-helm-kubectl-jq" \
+    org.label-schema.url="https://ghcr.io/redstonewizard08/docker-helm-kubectl-jq" \
+    org.label-schema.vcs-url="https://github.com/redstonewizard08/docker-helm-kubectl-jq"
 
 # Note: Latest version of kubectl may be found at:
 # https://github.com/kubernetes/kubernetes/releases
